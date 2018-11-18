@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:gedmo="http://gediminasm.org/schemas/orm/doctrine-extensions-mapping">
+
+    <mapped-superclass 
+        name="Towersystems\Webhook\Model\Callback" 
+        table="towersystems_webhook_callback"
+        repository-class='ResourceBundle\Repository\EntityRepository'
+    >
+
+        <id name="id" column="id" type="string">
+            <generator strategy="CUSTOM" class="Towersystems\Resource\Doctrine\ORM\Id\UuidGenerator"/>
+            <custom-id-generator class="Towersystems\Resource\Doctrine\ORM\Id\UuidGenerator" />
+        </id>
+
+        <field name="payload" column="payload" type="json" />
+        <field name="header" column="header" type="json" />
+        <field name="url" column="url" type="string" />
+        <field name="attempts" column="attempts" type="smallint" />
+        
+        <field name="lastExecuted" column="last_executed" type="datetime" nullable="true"/>
+        <field name="status" column="status" type="string" />
+
+        <field name="createdAt" column="created_at" type="datetime">
+            <gedmo:timestampable on="create"/>
+        </field>
+
+        <field name="updatedAt" column="updated_at" type="datetime" nullable="true">
+            <gedmo:timestampable on="update"/>
+        </field>
+    
+    </mapped-superclass>
+
+</doctrine-mapping>

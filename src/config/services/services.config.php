@@ -48,7 +48,6 @@ return [
 			'tower.webhook.webhook_provider' => WebhookProvider::class,
 			'tower.webhook.processing.callback_dispatcher' => CallbackDispatcherProcessor::class,
 			'tower.webhook.processing.state_resolver' => CallbackStateResolverProcessor::class,
-			'tower.webhook.processing.pos_token_resolver' => PosTokenResolverProcessor::class,
 			'tower.webhook.callback_dispatcher' => CallbackDispatcher::class,
 			'tower.webhook.callback_generator' => CallbackGenerator::class,
 		],

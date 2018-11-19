@@ -1,0 +1,22 @@
+{
+    "name": "towersystems/webhook-bundle",
+    "type": "library",
+    "description": "Zend Expressive; Create webhooks for your application",
+    "authors": [
+        {
+            "name": "kane",
+            "email": "kane.borthwick@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "towersystems/resource-bundle": "^1.0.0",
+        "towersystems/webhook": "^1.0.0",
+        "psr/http-message": "^1.0"
+    },
+   "autoload": {
+        "psr-4": { "WebhookBundle\\": "src\\" }
+    }
+}

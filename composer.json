@@ -17,7 +17,7 @@
     "require": {
         "php": "^7.1",
         "towersystems/resource-bundle": "^1.0.0",
-        "towersystems/webhook": "^1.0.0",
+        "towersystems/webhook": "dev-master@dev",
         "psr/http-message": "^1.0"
     },
    "autoload": {

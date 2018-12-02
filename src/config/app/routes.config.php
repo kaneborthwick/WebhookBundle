@@ -6,6 +6,7 @@ use WebhookBundle\Handler\RunProcessorHandler;
 return [
 
 	'routes' => [
+		/*
 		[
 			'name' => 'tower.webhooks.run_processor',
 			'path' => '/task/webhooks/run-processor',
@@ -31,9 +32,11 @@ return [
 				'action' => 'removeUrl',
 			],
 		],
+		*/
 	],
 
 	'towersystems_resource' => [
+		/*
 		'routes' => [
 			'webhooks' => [
 				'alias' => 'tower.webhook',
@@ -44,5 +47,6 @@ return [
 				'only' => ['index', 'show'],
 			],
 		],
+		*/
 	],
 ];

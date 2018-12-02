@@ -9,6 +9,7 @@ use WebhookBundle\Handler\WebhookResourceHandler;
 return [
 	'towersystems_resource' => [
 		"resources" => [
+			/* 
 			'tower.webhook' => [
 				'classes' => [
 					'model' => Webhook::class,
@@ -22,6 +23,7 @@ return [
 					'interface' => CallbackInterface::class,
 				],
 			],
+			*/
 		],
 	],
 ];

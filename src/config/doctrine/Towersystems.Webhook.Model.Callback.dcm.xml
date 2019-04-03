@@ -16,7 +16,7 @@
         <field name="header" column="header" type="json" />
         <field name="url" column="url" type="string" />
         <field name="attempts" column="attempts" type="smallint" />
-        
+        <field name="lastError" column="last_error" type="text" nullable="true"/>
         <field name="lastExecuted" column="last_executed" type="datetime" nullable="true"/>
         <field name="status" column="status" type="string" />
 

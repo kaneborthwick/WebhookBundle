@@ -16,7 +16,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "towersystems/resource-bundle": "dev-master@dev",
+        "towersystems/resource-bundle": "^1.0.4",
         "towersystems/webhook": "dev-master@dev",
         "psr/http-message": "^1.0"
     },
